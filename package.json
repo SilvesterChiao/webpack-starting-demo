@@ -1,40 +1,41 @@
 {
-    "name": "webpack-starting-demo",
-    "version": "1.0.0",
-    "description": "staudy webpack",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "webpack": "webpack",
-        "server": "webpack-dev-server --open",
-        "build": "set NODE_ENV=production && webpack --config ./webpack.production.config.js --progress",
-        "babel": "babel babel --out-dir babel-out"
-    },
-    "author": "",
-    "license": "ISC",
-    "devDependencies": {
-        "autoprefixer": "^9.3.1",
-        "babel-cli": "^6.26.0",
-        "babel-core": "^6.26.3",
-        "babel-loader": "^7.1.5",
-        "babel-plugin-react-transform": "^3.0.0",
-        "babel-preset-env": "^1.7.0",
-        "babel-preset-react": "^6.24.1",
-        "clean-webpack-plugin": "^0.1.19",
-        "css-loader": "^1.0.1",
-        "extract-text-webpack-plugin": "^3.0.2",
-        "file-loader": "^2.0.0",
-        "html-webpack-plugin": "^3.2.0",
-        "postcss-loader": "^3.0.0",
-        "react-transform-hmr": "^1.0.4",
-        "style-loader": "^0.23.1",
-        "url-loader": "^1.1.2",
-        "webpack": "^4.23.1",
-        "webpack-cli": "^3.1.2",
-        "webpack-dev-server": "^3.1.10"
-    },
-    "dependencies": {
-        "react": "^16.6.0",
-        "react-dom": "^16.6.0"
-    }
+  "name": "webpack-starting-demo",
+  "version": "1.0.0",
+  "description": "staudy webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack",
+    "dev": "webpack --mode development",
+    "server": "webpack-dev-server --open",
+    "build": "set NODE_ENV=production && webpack --config ./webpack.production.config.js --progress",
+    "babel": "babel babel --out-dir babel-out"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.3.1",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-react-transform": "^3.0.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^1.0.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "postcss-loader": "^3.0.0",
+    "react-transform-hmr": "^1.0.4",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.23.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  },
+  "dependencies": {
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0"
+  }
 }
