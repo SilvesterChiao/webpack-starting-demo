@@ -1,6 +1,6 @@
 // webpack.production.config.js
-const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+var webpack = require('webpack');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: __dirname + '/app/main.js', //已多次提及的唯一入口文件
