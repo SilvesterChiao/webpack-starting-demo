@@ -1,5 +1,7 @@
-let p = new Promise((reject, resolve) => {
-    setTimeout(() => {
-        reject('Hi')
-    }, 3000)
+let p = new Promise(resolve => {
+  setTimeout(() => {
+    resolve('Hi')
+  }, 3000)
 })
+
+export default p

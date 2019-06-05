@@ -27,3 +27,13 @@ npm install webpack -g
 ```bash
 npm install webpack --save-dev
 ```
+
+## 核心概念
+
+entry
+
+output
+
+loader
+
+plugins

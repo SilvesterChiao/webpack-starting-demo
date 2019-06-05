@@ -1,5 +1,6 @@
+/* eslint-disable linebreak-style */
 var sex = 'boy'
 var echo = function(value) {
-    console.log(value)
+  console.log(value)
 }
 export { sex, echo }
