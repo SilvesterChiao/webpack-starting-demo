@@ -1,8 +1,9 @@
-import React, { Component } from 'react'
-import config from './config'
-import styles from './Greeter'
-import 'styles/index'
-import coffee from 'images/coffee1.jpg'
+import React, { Component } from "react";
+import { Button, Icon, Row, Col, Table } from 'antd';
+import config from "./config"
+import styles from "./Greeter"
+import "styles/index"
+import coffee from "images/coffee1.jpg"
 
 class Greeter extends Component {
   render() {
