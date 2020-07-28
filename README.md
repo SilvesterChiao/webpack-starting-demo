@@ -1,56 +1,35 @@
-# 前端工程化探索
+# 前端工程化工具
 
 > 前端项目逐渐复杂
 
+vscode git npm  
+editorconfig  
+webpack gulp postcss babel eslint prettier mock
+
 ## webpack
 
-1. npm install webpack --save-dev
-2. webpack.config.js
+[了解更多](/docs/webpack.md)
 
-webpack postcss babel npm eslint editorconfig prettier
-vscode mock git gulp vscode
+## babel
 
-## Webpack 入门
+[了解更多](/docs/babel.md)
 
-### Webpack 简介
+## eslint
 
-### 安装
+[了解更多](/docs/eslint.md)
 
-全局安装
+## prettier
 
-```bash
-npm install webpack -g
-```
+[了解更多](/docs/prettier.md)
 
-本地安装
-
-```bash
-npm install webpack --save-dev
-```
-
-## 核心概念
-
-entry
-
-output
-
-loader
-
-plugins
-webpack postcss babel npm eslint  
-editorconfig prettier  
-vscode mock git gulp
-
--   [webpack](/docs/webpack.md)
--   [babel](/docs/babel.md)
--   [eslint](/docs/eslint.md)
--   [prettier](/docs/prettier.md)
 
 ## 脚本
 
--   npm run webpack：webpack打包
--   npm run dev：development模式打包
--   npm run server：本地运行
--   npm run build：production模式打包
--   npm run babel：编译es6
--   npm run prettier：格式化
+-   npm run webpack：webpack 打包
+-   npm run dev：development 模式打包
+-   npm run server：webpack-dev-server 启动
+-   npm run build：production 模式打包
+-   npm run babel：编译 es6
+-   npm run lint: 语法检查
+-   npm run lint-fix: 语法检查并 fix
+-   npm run prettier：使用 prettier 格式化

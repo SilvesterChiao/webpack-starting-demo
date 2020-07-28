@@ -1,19 +1,19 @@
 // webpack
-var path = require('path');
-var webpack = require('webpack');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-var CleanWebpackPlugin = require('clean-webpack-plugin');
+const path = require('path')
+const webpack = require('webpack')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CleanWebpackPlugin = require('clean-webpack-plugin')
 
 function resolve(dir) {
-  return path.join(__dirname, '..', dir);
+  return path.join(__dirname, '..', dir)
 }
 
 module.exports = {
   // 打包唯一入口，已多次提及的唯一入口文件
-  entry: __dirname + '/app/main.js',
+  entry: path.join(__dirname, '/app/main.js'),
   output: {
     // 打包输入目录
-    path: __dirname + '/build',
+    path: path.join(__dirname, '/build'),
     // 打包文件名
     filename: 'bundle-[hash].js',
   },
@@ -72,7 +72,7 @@ module.exports = {
   plugins: [
     new webpack.BannerPlugin('版权所有，翻版必究'),
     new HtmlWebpackPlugin({
-      template: __dirname + '/app/index.tmpl.html',
+      template: path.join(__dirname, '/app/index.tmpl.html'),
     }),
     new webpack.HotModuleReplacementPlugin(),
     new CleanWebpackPlugin('build/*.*', {
@@ -92,4 +92,4 @@ module.exports = {
   externals: {
     jquery: 'jQuery',
   },
-};
+}
