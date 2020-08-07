@@ -1,5 +1,7 @@
 # webpack
 
+version: 4.23.1
+
 ## Webpack 入门
 
 ### Webpack 简介
@@ -95,3 +97,4 @@ plugins
 
 1. [webpack 中文文档](https://www.webpackjs.com/)
 1. [看完你就会用 webpack 了](https://juejin.im/post/5f14f886f265da2306247f7b)
+1. [webpack入门看他就够了！！](https://juejin.im/post/6844903958993960973)
