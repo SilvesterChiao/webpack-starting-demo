@@ -72,7 +72,7 @@ plugins
 1. [open-browser-webpack-plugin](./webpack-plugins.md#open-browser-webpack-plugin): 打开浏览器, 开发环境启用
 1. [progress-bar-webpack-plugin](./webpack-plugins.md#progress-bar-webpack-plugin): 打包时显示进度条
 1. [HappyPack](./webpack-plugins.md#happy-pack): 多进程处理打包过程
-1. [[webpack-parallel-uglify-plugin]](./webpack-plugins.md#webpack-parallel-uglify-plugin): 多进程压缩代码
+1. [webpack-parallel-uglify-plugin](./webpack-plugins.md#webpack-parallel-uglify-plugin): 多进程压缩代码
 
 ## 打包脚本
 
