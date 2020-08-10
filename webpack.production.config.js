@@ -10,7 +10,7 @@ module.exports = {
   },
   devtool: 'null', //注意修改了这里，这能大大压缩我们的打包代码
   devServer: {
-    contentBase: './public', //本地服务器所加载的页面所在的目录
+    contentBase: './build', //本地服务器所加载的页面所在的目录
     historyApiFallback: true, //不跳转
     inline: true,
     hot: true,
@@ -47,7 +47,7 @@ module.exports = {
   plugins: [
     new webpack.BannerPlugin('版权所有，翻版必究'),
     new HtmlWebpackPlugin({
-      template: __dirname + '/app/index.tmpl.html',
+      template: __dirname + '/index.html',
     }),
     new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.optimize.UglifyJsPlugin(),

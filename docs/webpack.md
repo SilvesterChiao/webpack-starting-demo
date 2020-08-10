@@ -33,6 +33,7 @@ plugins
 ## 配置
 
 默认配置文件: webpack.config.js
+指定配置文件: webpack --config webpack.config.js
 
 - entry
 - output
@@ -73,6 +74,7 @@ plugins
 1. [progress-bar-webpack-plugin](./webpack-plugins.md#progress-bar-webpack-plugin): 打包时显示进度条
 1. [HappyPack](./webpack-plugins.md#happy-pack): 多进程处理打包过程
 1. [webpack-parallel-uglify-plugin](./webpack-plugins.md#webpack-parallel-uglify-plugin): 多进程压缩代码
+1. [uglifyjs-webpack-plugin](./webpack-plugins.md#uglifyjs-webpack-plugin): 
 
 ## 打包脚本
 
@@ -92,9 +94,14 @@ plugins
     - 验收环境 stage
     - 生产环境 prod
 1. 如何在 nodejs 中使用 webpack
+1. 执行 npm run server, 控制台不断打印 client?ca1d:174 Invalid Host/Origin header
+    ![Invalid Host/Origin header](./images/invalid_host.png)
+    配置中设置 devServer.disableHostCheck 为 true
 
 ## 参考链接
 
 1. [webpack 中文文档](https://www.webpackjs.com/)
 1. [看完你就会用 webpack 了](https://juejin.im/post/5f14f886f265da2306247f7b)
 1. [webpack入门看他就够了！！](https://juejin.im/post/6844903958993960973)
+1. [webpack配置（第五步：less/css篇（基础篇））](https://my.oschina.net/u/3797834/blog/1649270)
+1. [【解决方案】webpack `Invalid Host/Origin header`问题](https://blog.csdn.net/u013243347/article/details/85223016)

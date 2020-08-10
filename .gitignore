@@ -3,3 +3,4 @@ build/
 public/
 babel-out/
 node_modules/
+.DS_Store

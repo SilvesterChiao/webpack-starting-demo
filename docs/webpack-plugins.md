@@ -2,7 +2,7 @@
  * @Author: SilvesterChiao
  * @Date: 2020-07-27 14:31:10
  * @LastEditors: SilvesterChiao
- * @LastEditTime: 2020-07-27 14:33:49
+ * @LastEditTime: 2020-08-10 14:01:30
 --> 
 
 # webpack 常用插件
@@ -32,6 +32,8 @@
 <h2 id="happy-pack">HappyPack</h2>
 
 <h2 id="webpack-parallel-uglify-plugin">webpack-parallel-uglify-plugin</h2>
+
+<h2 id="uglifyjs-webpack-plugin">uglifyjs-webpack-plugin</h2>
 
 ## 参考链接
 
