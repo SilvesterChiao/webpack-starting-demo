@@ -2,10 +2,17 @@
  * @Author: SilvesterChiao
  * @Date: 2020-05-08 18:10:56
  * @LastEditors: SilvesterChiao
- * @LastEditTime: 2020-07-20 14:21:59
+ * @LastEditTime: 2020-08-11 11:10:02
 -->
 
 # prettier
+
+## 安装
+
+```bash
+npm install -g prettier
+npm install --save-dev prettier
+```
 
 ## option
 

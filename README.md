@@ -2,10 +2,10 @@
 
 > 前端项目逐渐复杂
 
-vscode git npm  
-editorconfig eslint prettier  
-webpack gulp postcss babel  
-mock
+- 基础工具: vscode git npm
+- 语法检查/代码格式化: editorconfig eslint prettier
+- 项目构建: webpack/gulp postcss babel
+- 数据服务: mock
 
 ## webpack
 

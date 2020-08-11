@@ -3,8 +3,6 @@ import React, { Component} from "react"
 const config = require('./config.json')
 import styles from './Greeter.less'
 
-console.log(styles)
-
 class Greeter extends Component{
   render(){
     return(

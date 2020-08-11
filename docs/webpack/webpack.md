@@ -1,6 +1,7 @@
 # webpack
 
-version: 4.23.1
+最新版本: 5.0.0  
+使用版本: 4.23.1
 
 ## Webpack 入门
 
@@ -32,8 +33,9 @@ plugins
 
 ## 配置
 
-默认配置文件: webpack.config.js
-指定配置文件: webpack --config webpack.config.js
+默认配置文件: webpack.config.js  
+指定配置文件: webpack --config webpack.config.js  
+[了解更多](./webpack-config)
 
 - entry
 - output
@@ -56,20 +58,29 @@ plugins
 
 ## 常用 loader
 
-1. css-loader
+1. babel-loader
 1. style-loader
+1. css-loader
+1. postcss-loader
+1. less-loader
+1. url-loader
+1. file-loader
+1. json-loader
 
 ## 常用插件
 
 1. [webpack.DefinePlugin](./webpack-plugins.md#define-plugin): 设置不同环境的全局变量
 1. [webpack.optimize.ModuleConcatenationPlugin](./webpack-plugins.md#module-concatenation-plugin): 提升模块化性能
 1. [webpack.optimize.CommonsChunkPlugin](./webpack-plugins.md#commons-chunk-plugin): 处理公共模块
+1. [webpack.optimize.OccurrenceOrderPlugin](./webpack-plugins.md#occurrence-order-plugin): 处理公共模块
 1. [webpack.HotModuleReplacementPlugin](./webpack-plugins.md#hot-module-replacement-plugin): 热替换, 开发环境启用
 1. [webpack.DllReferencePlugin](./webpack-plugins.md#dll-reference-plugin): 仅打包非第三方库代码
+1. [webpack.BannerPlugin](./webpack-plugins.md#banner-plugin): 仅打包非第三方库代码
 1. [html-webpack-plugin](./webpack-plugins.md#html-webpack-plugin): 生成 HTML 文件
 1. [copy-webpack-plugin](./webpack-plugins.md#copy-webpack-plugin): 拷贝文件或目录
 1. [clean-webpack-plugin](./webpack-plugins.md#clean-webpack-plugin): 清除文件或目录
 1. [extract-text-webpack-plugin](./webpack-plugins.md#extract-text-webpack-plugin): 提取 CSS 到 `.css` 文件中
+1. [mini-css-extract-plugin](./webpack-plugins.md#mini-css-extract-plugin): 提取 CSS 到 `.css` 文件中
 1. [open-browser-webpack-plugin](./webpack-plugins.md#open-browser-webpack-plugin): 打开浏览器, 开发环境启用
 1. [progress-bar-webpack-plugin](./webpack-plugins.md#progress-bar-webpack-plugin): 打包时显示进度条
 1. [HappyPack](./webpack-plugins.md#happy-pack): 多进程处理打包过程
@@ -79,7 +90,17 @@ plugins
 ## 打包脚本
 
 1. webpack
-1. webpack-dev-server
+1. [webpack-dev-server](./webpack-dev-server)
+
+## 其他
+
+less-vars-to-js
+
+webpack-merge
+
+webpack-dev-middleware
+
+[使用 webpack 打包 React 项目](./webpack-react)
 
 ## 常见问题
 
@@ -95,7 +116,7 @@ plugins
     - 生产环境 prod
 1. 如何在 nodejs 中使用 webpack
 1. 执行 npm run server, 控制台不断打印 client?ca1d:174 Invalid Host/Origin header
-    ![Invalid Host/Origin header](./images/invalid_host.png)
+    ![Invalid Host/Origin header](../assets/images/invalid_host.png)
     配置中设置 devServer.disableHostCheck 为 true
 
 ## 参考链接
