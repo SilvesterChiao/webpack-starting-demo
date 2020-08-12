@@ -2,7 +2,7 @@
  * @Author: SilvesterChiao
  * @Date: 2020-05-11 15:51:37
  * @LastEditors: SilvesterChiao
- * @LastEditTime: 2020-08-11 11:14:38
+ * @LastEditTime: 2020-08-12 16:53:35
  -->
 
 # 配置文件
@@ -16,7 +16,31 @@ Babel 的配置文件支持以下几种
 
 - presets
 - env
+```json
+{
+    "env": {
+        "development": {
+            "plugins": [
+                [
+                    "react-transform",
+                    {
+                        "transforms": [
+                            {
+                                "transform": "react-transform-hmr",
+                                "imports": ["react"],
+                                "locals": ["module"]
+                            }
+                        ]
+                    }
+                ]
+            ]
+        }
+    }
+}
+```
 - plugins
 - ignore
 - only
-- minified
+- modules: amd, umd, systemjs, commonjs, false
+- minified: true
+- parser: "babel-eslint"

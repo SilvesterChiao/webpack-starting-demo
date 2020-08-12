@@ -2,7 +2,7 @@
  * @Author: SilvesterChiao
  * @Date: 2020-05-11 14:23:40
  * @LastEditors: SilvesterChiao
- * @LastEditTime: 2020-05-11 16:28:33
+ * @LastEditTime: 2020-08-12 15:05:29
  -->
 
 # Babel 插件
@@ -23,26 +23,26 @@ env 包含 es2015, es2016, es2017
 - ES5
     - property-mutators
 - ES2015 (babel-preset-es2015)
-    - arrow-functions
-    - block-scoped-functions
-    - block-scoping
-    - classes
-    - computed-properties
-    - destructuring
-    - duplicate-keys
-    - for-of
-    - function-name
-    - instanceof
-    - literals
-    - new-target
-    - object-super
-    - parameters
-    - shorthand-properties
-    - spread
-    - sticky-regex
-    - template-literals
-    - typeof-symbol
-    - unicode-regex
+    - arrow-functions: @babel/plugin-transform-arrow-functions
+    - block-scoped-functions: @babel/plugin-transform-block-scoped-functions
+    - block-scoping: @babel/plugin-transform-block-scoping
+    - classes: @babel/plugin-transform-classes
+    - computed-properties: @babel/plugin-transform-computed-properties
+    - destructuring: @babel/plugin-transform-destructuring
+    - duplicate-keys: @babel/plugin-transform-duplicate-keys
+    - for-of: 
+    - function-name: 
+    - instanceof: 
+    - literals: 
+    - new-target: 
+    - object-super: 
+    - parameters: 
+    - shorthand-properties: 
+    - spread: 
+    - sticky-regex: 
+    - template-literals: 
+    - typeof-symbol: 
+    - unicode-regex: 
 - ES2016
     - exponentiation-operator
 - ES2017

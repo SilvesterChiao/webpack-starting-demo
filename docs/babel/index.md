@@ -2,7 +2,7 @@
  * @Author: SilvesterChiao
  * @Date: 2020-05-11 11:20:07
  * @LastEditors: SilvesterChiao
- * @LastEditTime: 2020-08-11 11:15:07
+ * @LastEditTime: 2020-08-12 15:42:07
  -->
 
 # Babel
@@ -28,6 +28,15 @@ npm install babel -g
 
 ## 命令行
 
+常用参数
+
+- -w --watch
+- -o --out-file
+- -d --out-dir
+- -s --ssource-maps
+- --plugins
+- --presets
+
 ```bash
 # 转码并输出到标准输出
 babel example.js
@@ -38,7 +47,7 @@ babel example.js -o compiled.js
 # 转码整个目录
 babel src --out-dir lib
 # 或者
-babel src -d lib
+babel src -d lib -w
 # 生成 source map 文件
 babel src -d lib -s
 ```
@@ -51,11 +60,18 @@ babel src -d lib -s
 
 1. babel-cli: 命令行
 1. babel-node: 直接执行 node.js 代码, 代替 node 命令
-1. babel-core: 核心模块
+1. babel-register: 对 require 命令加载的文件转码
 1. babel-polyfill: 增加新增 API 支持
+1. babel-runtime: 
+1. babel-plugin-transform-runtime: 
+1. babel-core: 核心模块
 1. babel-eslint: eslint 语法检查
-1. babel-register:
-1. babel/preset-env:
+1. babel/preset-env: 插件集
+
+## 常见问题
+
+1. 如何与 ESLint 结合使用
+1. 如何实现热更新
 
 ## 参考文档
 
