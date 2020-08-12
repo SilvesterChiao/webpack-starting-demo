@@ -1,10 +1,13 @@
 class Person {
-  constructor () {
+  constructor() {
     this.name = 'bigbigStrong'
   }
-  sayName () {
+
+  sayName() {
     console.log(`my name is ${this.name}`)
   }
 }
-var p = new Person()
+
+const p = new Person()
+
 p.sayName()
