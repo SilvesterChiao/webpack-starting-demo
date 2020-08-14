@@ -1,6 +1,7 @@
+// classes
 class Person {
-  constructor() {
-    this.name = 'bigbigStrong'
+  constructor(name) {
+    this.name = name
   }
 
   sayName() {
