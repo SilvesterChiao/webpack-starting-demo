@@ -2,27 +2,57 @@
  * @Author: SilvesterChiao
  * @Date: 2020-08-07 17:04:48
  * @LastEditors: SilvesterChiao
- * @LastEditTime: 2020-08-10 11:12:28
+ * @LastEditTime: 2020-08-27 16:44:43
 --> 
 
 # webpack 配置
 
-1. entry
+## entry
 
-2. output
+
+entry 有3种写法
+
+1. 单文件
+
+``` javascript
+module.exports = {
+    entry: './src/scripts/main.js'
+}
+```
+
+2. 数组
+
+``` javascript
+module.exports = {
+    entry: ['./src/scripts/main.js', './src/scripts/a.js']
+}
+```
+
+3. 对象
+
+``` javascript
+module.exports = {
+    entry: {
+        page1: './src/entry',
+        page2: ['./src/entry1', './src/entry2']
+    }
+}
+```
+
+## output
 
 - path
 - filename
 
-3. mode
+## mode
 
 可取的值: development
 
-4. dev-tool
+## dev-tool
 
 可取的值: eval-source-map, source-map, cheap-module-source-map, cheap-module-eval-source-map
 
-5. devServer
+## devServer
 
 - contentBase: 目录
 - port: 端口
@@ -30,7 +60,7 @@
 - inline: 开始实时刷新
 - hot: 
 
-6. module
+## module
 
 编译 ES6, 编译 Less/Sass, 加载图片/字体/SVG/xml/json
 
@@ -42,16 +72,16 @@
     - exclude: 排除目录
     - include: 包含目录
 
-7. plugins
+## plugins
 
 配置插件, 数组, new 插件实例, [常用插件](./webpack-plugins)
 
-8. resolve
+## resolve
 
 - extensions: 默认后缀, 引入时可以省略
 - alias: 别名, 引入时可以使用的目录简写
 
-9. externals: 外部扩展
+## externals: 外部扩展
 
 - jquery: 'jQuery': 不会把 jquery 打包
 

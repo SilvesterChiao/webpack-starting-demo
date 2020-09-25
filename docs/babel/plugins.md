@@ -128,6 +128,6 @@ plugins 和 presets 的执行顺序
 - [transform-object-rest-spread](https://www.npmjs.com/package/babel-plugin-transform-object-rest-spread): 解构赋值及对象的扩展属性
 - [babel-plugin-import](https://www.npmjs.com/package/babel-plugin-import): 模块化导入插件
 
-## 参考链接
+## 参考文档
 
 1. [Babel 插件](https://www.babeljs.cn/docs/plugins)

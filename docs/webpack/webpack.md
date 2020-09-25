@@ -21,6 +21,31 @@ npm install webpack -g
 npm install webpack --save-dev
 ```
 
+## 基本用法
+
+``` bash
+webpack hello.js hello.bundle.js
+```
+
+结果如下图: 
+Hash: 本次打包 hash 值
+Version: webpack 版本
+Time: 本次打包所用时间
+Asset: 生成文件
+Size: 文件体积
+Chunks: 分块
+Chunks Name: 分块名称
+
+![webpack](/img/webpack.png)
+
+## cli
+
+命令行参数
+watch: 监听文件
+progress: 打包过程
+display-modules: 打包模块
+display-reasons: 打包原因
+
 ## 核心概念
 
 entry
@@ -119,8 +144,10 @@ webpack-dev-middleware
     ![Invalid Host/Origin header](../assets/images/invalid_host.png)
     配置中设置 devServer.disableHostCheck 为 true
 
-## 参考链接
+## 参考文档
 
+1. [官网地址](http://webpack.github.io/)
+1. [中文文档](http://www.css88.com/doc/webpack2/)
 1. [webpack 中文文档](https://www.webpackjs.com/)
 1. [看完你就会用 webpack 了](https://juejin.im/post/5f14f886f265da2306247f7b)
 1. [webpack入门看他就够了！！](https://juejin.im/post/6844903958993960973)

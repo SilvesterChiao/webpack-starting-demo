@@ -2,7 +2,7 @@
  * @Author: SilvesterChiao
  * @Date: 2020-07-27 14:31:10
  * @LastEditors: SilvesterChiao
- * @LastEditTime: 2020-08-10 18:11:22
+ * @LastEditTime: 2020-08-27 16:42:46
 --> 
 
 # webpack 常用插件
@@ -22,6 +22,22 @@
 <h2 id="banner-plugin">webpack.BannerPlugin</h2>
 
 <h2 id="html-webpack-plugin">html-webpack-plugin</h2>
+
+``` bash
+npm install --save-dev html-webpack-plugin
+```
+
+``` javascript
+var htmlWebpackPlugin = require('html-webpack-plugin')
+
+module.exports = {
+    plugins: {
+        new htmlWebpackPlugin({
+            template: 'index.html'
+        })
+    }
+}
+```
 
 <h2 id="copy-webpack-plugin">copy-webpack-plugin</h2>
 
@@ -45,7 +61,7 @@
 
 <h2 id="uglifyjs-webpack-plugin">uglifyjs-webpack-plugin</h2>
 
-## 参考链接
+## 参考文档
 
 1. []()
 1. []()
