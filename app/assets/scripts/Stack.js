@@ -3,19 +3,19 @@ class Stack {
         this.items = []
     }
 
-    push (element) {
+    push(element) {
         this.items.push(element)
     }
 
-    pop () {
+    pop() {
         return this.items.pop()
     }
 
-    peek () {
+    peek() {
         return this.items[this.items.length - 1]
     }
 
-    isEmpty () {
+    isEmpty() {
         return this.items.length === 0
     }
 }

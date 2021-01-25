@@ -25,17 +25,25 @@
 
 ## 目录结构
 
+```
 .  
-|---- .babelrc: babel 配置  
-|---- .eslintrc.js: eslint 配置  
-|---- .prettierrc: prettier 配置  
-|---- postcss.config.js: postcss 配置  
-|---- webpack.**.config.js: webpack 配置文件  
-|---- docs: 文档  
-|---- babel: ES6 源码  
-|---- babel-out: babel 输出目录  
-|---- app: 源码  
-|---- build: 打包目录  
+|---- app: 源码
+|---- babel: ES6 源码
+|---- babel-out: babel 输出目录
+|---- build: 打包目录
+|---- docs: 文档
+|---- loaders: 自定义 loader
+|---- plugins: 自定义 plugins
+|---- react: react 项目源码
+|---- vue: vue 项目源码
+|---- .babelrc: babel 配置
+|---- .editorconfig: editorconfig 配置
+|---- .eslintignore.js: eslint ignore文件
+|---- .eslintrc.js: eslint 配置
+|---- .prettierrc: prettier 配置
+|---- postcss.config.js: postcss 配置
+|---- webpack.**.config.js: webpack 配置文件
+```
 
 ## 脚本
 

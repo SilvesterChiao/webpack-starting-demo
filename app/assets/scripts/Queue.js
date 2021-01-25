@@ -1,3 +1,5 @@
 export default class Queue {
-    constructor () {}
+    constructor() {
+        this.data = []
+    }
 }

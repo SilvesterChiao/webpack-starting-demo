@@ -1,3 +1,5 @@
 export default class Tree {
-    constructor () {}
+    constructor() {
+        this.data = []
+    }
 }

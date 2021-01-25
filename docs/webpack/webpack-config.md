@@ -2,15 +2,14 @@
  * @Author: SilvesterChiao
  * @Date: 2020-08-07 17:04:48
  * @LastEditors: SilvesterChiao
- * @LastEditTime: 2020-08-27 16:44:43
+ * @LastEditTime: 2020-10-09 10:26:01
 --> 
 
 # webpack 配置
 
 ## entry
 
-
-entry 有3种写法
+entry 有3种写法, 对应 Chunk Names
 
 1. 单文件
 
@@ -31,6 +30,7 @@ module.exports = {
 3. 对象
 
 ``` javascript
+// 会生成 page1, page2 两个 Chunk Names
 module.exports = {
     entry: {
         page1: './src/entry',
@@ -46,7 +46,7 @@ module.exports = {
 
 ## mode
 
-可取的值: development
+可取的值: development, production
 
 ## dev-tool
 
@@ -54,11 +54,7 @@ module.exports = {
 
 ## devServer
 
-- contentBase: 目录
-- port: 端口
-- historyApiFallback: 不跳转
-- inline: 开始实时刷新
-- hot: 
+详见[webpack-dev-server](./webpack-dev-server)
 
 ## module
 

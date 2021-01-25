@@ -1,20 +1,20 @@
 {
   "name": "webpack-starting-demo",
   "version": "1.0.0",
-  "description": "staudy webpack",
+  "description": "learn webpack",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "webpack": "webpack",
     "dev": "webpack --mode development --color --progress",
-    "server": "webpack-dev-server --open --color --progress --hot",
+    "server": "cross-env NODE_ENV=development webpack-dev-server --color --progress --hot",
     "build": "set NODE_ENV=production && webpack --config ./webpack.production.config.js --progress",
     "babel": "babel babel --out-dir babel-out",
     "lint": "eslint --ext .js --ext .jsx --ext .vue app/",
     "lint-fix": "eslint --fix --ext .js --ext .jsx --ext .vue app/",
     "prettier": "prettier --write --require-pragma app/Greeter.js"
   },
-  "author": "",
+  "author": "SilvesterChiao",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.10.5",
@@ -26,6 +26,7 @@
     "babel-plugin-react-transform": "^3.0.0",
     "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^5.0.3",
+    "cross-env": "^7.0.2",
     "css-loader": "^1.0.1",
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.0",
@@ -41,6 +42,7 @@
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^2.0.0",
     "html-webpack-plugin": "^3.2.0",
+    "less": "^3.12.2",
     "less-loader": "^5.0.0",
     "mini-css-extract-plugin": "^0.9.0",
     "postcss-loader": "^3.0.0",
@@ -56,8 +58,8 @@
     "webpack-dev-server": "^3.1.11"
   },
   "dependencies": {
+    "loader-utils": "^2.0.0",
     "babel-polyfill": "^6.26.0",
-    "less": "^3.12.2",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "react-hot-loader": "^4.12.21"
