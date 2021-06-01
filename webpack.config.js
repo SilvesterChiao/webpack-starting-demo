@@ -5,13 +5,15 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 // const UglifyWebpackPlugin = require('uglifyjs-webpack-plugin')
-const MyWebpackPlugin = require('./plugins/index')
+// const MyWebpackPlugin = require('./plugins/index')
+const WebpackPlugin = require('./plugins/WebpackPlugin')
+// const ChunkChangeTime = require('chunk-change-time-webpack-plugin');
 
 function resolve(dir) {
     return path.join(__dirname, '..', dir)
 }
 
-let config = {
+const config = {
     entry: path.join(__dirname, '/app/main.js'), // 入口文件
     output: {
         path: path.join(__dirname, '/build'), // 存放打包后的文件路径
@@ -77,8 +79,11 @@ let config = {
             },
         ],
     },
+    optimization: {},
     plugins: [
-        new MyWebpackPlugin({ name: 'Silvester', filename: 'list' }),
+        // new MyWebpackPlugin({ name: 'Silvester', filename: 'list' }),
+        // new ChunkChangeTime(),
+        new WebpackPlugin({ msg: '123' }),
         new ProgressBarPlugin({
             format: 'build [:bar] :percent (:elapsed seconds)',
             clear: false,
@@ -88,7 +93,6 @@ let config = {
         new HtmlWebpackPlugin(({
             template: path.join(__dirname, 'index.html'), // new 一个这个插件的实例，并传入相关的参数
         })),
-        new webpack.optimize.OccurrenceOrderPlugin(),
         new CleanWebpackPlugin({
             dry: false,
             verbose: true,
@@ -111,6 +115,7 @@ let config = {
             styles: path.resolve(__dirname, 'app/assets/styles/'),
             scripts: path.resolve(__dirname, 'app/assets/scripts/'),
         },
+        // modules: [],
     },
     externals: {
         // 不打包
