@@ -10,7 +10,7 @@ function resolve(dir) {
 
 module.exports = {
     // 打包唯一入口，已多次提及的唯一入口文件
-    entry: path.join(__dirname, '/app/main.js'),
+    entry: path.join(__dirname, '/src/main.js'),
     output: {
         // 打包输入目录
         path: path.join(__dirname, '/build'),
@@ -84,9 +84,9 @@ module.exports = {
     resolve: {
         extensions: ['.css', '.js', '.vue', '.scss', '.json'],
         alias: {
-            '@': resolve('app'),
-            images: path.resolve(__dirname, 'app/assets/images'),
-            styles: path.resolve(__dirname, 'app/assets/styles/'),
+            '@': resolve('src'),
+            images: path.resolve(__dirname, 'src/assets/images'),
+            styles: path.resolve(__dirname, 'src/assets/styles/'),
         },
     },
     externals: {

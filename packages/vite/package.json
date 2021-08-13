@@ -1,0 +1,8 @@
+{
+  "name": "vite",
+  "version": "1.0.0",
+  "description": "learn vite",
+  "main": "index.js",
+  "scripts": {
+  }
+}

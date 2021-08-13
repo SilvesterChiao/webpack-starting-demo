@@ -14,7 +14,7 @@ function resolve(dir) {
 }
 
 const config = {
-    entry: path.join(__dirname, '/app/main.js'), // 入口文件
+    entry: path.join(__dirname, '/src/main.js'), // 入口文件
     output: {
         path: path.join(__dirname, '/build'), // 存放打包后的文件路径
         filename: 'bundle-[hash].js', // 打包后的文件名
@@ -99,7 +99,7 @@ const config = {
         }),
         new CopyWebpackPlugin([
             {
-                from: path.join(__dirname, '/app/assets/images'),
+                from: path.join(__dirname, '/src/assets/images'),
                 to: path.join(__dirname, '/build'),
                 ignore: ['.*'],
             },
@@ -110,10 +110,10 @@ const config = {
         extensions: ['.css', '.js', '.vue', '.scss', '.json'],
         alias: {
         // 目录别名
-            '@': resolve('app'),
-            images: path.resolve(__dirname, 'app/assets/images'),
-            styles: path.resolve(__dirname, 'app/assets/styles/'),
-            scripts: path.resolve(__dirname, 'app/assets/scripts/'),
+            '@': resolve('src'),
+            images: path.resolve(__dirname, 'src/assets/images'),
+            styles: path.resolve(__dirname, 'src/assets/styles/'),
+            scripts: path.resolve(__dirname, 'src/assets/scripts/'),
         },
         // modules: [],
     },

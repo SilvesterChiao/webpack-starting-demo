@@ -41,7 +41,7 @@ npx eslint eslint yourfile.js
 ```
 
 输出结果如下图（vscode 终端）：
-![eslint输出](../assets/images/eslint-cli.png)
+![eslint输出](./images/eslint-cli.png)
 3 个 error，0 个 warning，退出码为 1
 
 > 关于退出码：0，无错误；1，有错误；2，eslint 执行出错，npm bug 或者配置文件不对
@@ -68,7 +68,7 @@ npx eslint eslint yourfile.js
 - “warning”或 1： 警告（不影响退出码）
 - “error”或 2：错误（退出码为 1）
 
-加入下面一行配置表示默认开启[规则](https://cn.eslint.org/docs/rules/)中所有标记![OK](../assets/images/recommended.png)的规则，也可以在[npm](https://www.npmjs.com/search?q=eslint-config)搜索*eslint-config*使用别人创建好的配置
+加入下面一行配置表示默认开启[规则](https://cn.eslint.org/docs/rules/)中所有标记![OK](./images/recommended.png)的规则，也可以在[npm](https://www.npmjs.com/search?q=eslint-config)搜索*eslint-config*使用别人创建好的配置
 
 ```json
 "extends": "eslint:recommended"

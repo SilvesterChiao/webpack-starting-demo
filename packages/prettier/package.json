@@ -1,0 +1,9 @@
+{
+  "name": "prettier",
+  "version": "1.0.0",
+  "description": "learn prettier",
+  "main": "index.js",
+  "scripts": {
+    "prettier": "prettier --write --require-pragma src/Greeter.js"
+  }
+}

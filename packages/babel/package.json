@@ -1,0 +1,9 @@
+{
+  "name": "babel",
+  "version": "1.0.0",
+  "description": "learn babel",
+  "main": "index.js",
+  "scripts": {
+    "babel": "babel src --out-dir dist"
+  }
+}

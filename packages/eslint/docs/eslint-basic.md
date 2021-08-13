@@ -1,6 +1,6 @@
 <h1 id="eslint-basic">eslint 基础规则</h1>
 
-[eslint 规则](https://cn.eslint.org/docs/rules/)，*eslint*基础规则，9 类 284 条，![推荐规则](../assets/images/recommended.png)表示推荐规则，![自动fix规则](../assets/images/wrench-fill.png)表示可自动 fix 规则
+[eslint 规则](https://cn.eslint.org/docs/rules/)，*eslint*基础规则，9 类 284 条，![推荐规则](../images/recommended.png)表示推荐规则，![自动fix规则](../images/wrench-fill.png)表示可自动 fix 规则
 
 ## 目录
 
