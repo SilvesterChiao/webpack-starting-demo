@@ -2,11 +2,12 @@
 #
 **/node_modules
 **/yarn-error.log
-/lib
+**/lib
+**/tmp
 .vscode
 .DS_Store
 
-**/build
+**/dist
 **/build
 **/public
 **/coverage

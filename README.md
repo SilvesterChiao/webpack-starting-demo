@@ -9,49 +9,40 @@
 
 ## webpack
 
-[了解更多](/docs/webpack.md)
+[了解更多](packages/webpack/README.md)
+
+## Rollup
+
+[了解更多](packages/Rollup/README.md)
+
+## Vite
+
+[了解更多](packages/Vite/README.md)
+
+## Gulp
+
+[了解更多](packages/gulp/README.md)
 
 ## babel
 
-[了解更多](/docs/babel.md)
+[了解更多](packages/babel/README.md)
 
 ## eslint
 
-[了解更多](/docs/eslint.md)
+[了解更多](packages/eslint/README.md)
 
 ## prettier
 
-[了解更多](/docs/prettier.md)
-
-## 目录结构
-
-```
-.  
-|---- app: 源码
-|---- babel: ES6 源码
-|---- babel-out: babel 输出目录
-|---- build: 打包目录
-|---- docs: 文档
-|---- loaders: 自定义 loader
-|---- plugins: 自定义 plugins
-|---- react: react 项目源码
-|---- vue: vue 项目源码
-|---- .babelrc: babel 配置
-|---- .editorconfig: editorconfig 配置
-|---- .eslintignore.js: eslint ignore文件
-|---- .eslintrc.js: eslint 配置
-|---- .prettierrc: prettier 配置
-|---- postcss.config.js: postcss 配置
-|---- webpack.**.config.js: webpack 配置文件
-```
+[了解更多](packages/prettier/README.md)
 
 ## 脚本
 
 -   npm run webpack：webpack 打包
+-   npm run analyze: webpack 分析工具
 -   npm run dev：development 模式打包
--   npm run server：webpack-dev-server 启动
+-   npm run dev-server：webpack-dev-server 启动
 -   npm run build：production 模式打包
 -   npm run babel：编译 es6
 -   npm run lint: 语法检查
--   npm run lint-fix: 语法检查并 fix
+-   npm run fix: 语法检查并 fix
 -   npm run prettier：使用 prettier 格式化
