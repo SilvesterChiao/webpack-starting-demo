@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "description": "learn gulp",
   "main": "index.js",
-  "scripts": {
+  "scripts": {},
+  "dependencies": {
+    "gulp": "^4.0.2"
+  },
+  "devDependencies": {
+    "gulp-concat": "^2.6.1",
+    "through2": "^4.0.2"
   }
 }
