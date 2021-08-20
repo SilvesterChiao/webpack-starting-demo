@@ -1,5 +1,11 @@
 const path = require('path')
 const { src, dest, task, series, parallel } = require('gulp')
+const less = require('gulp-less')
+const cleancss = require('gulp-clean-css')
+const rename = require('gulp-rename')
+const autoprefixer = require('gulp-autoprefixer')
+const babel = require('gulp-babel')
+const uglify = require('gulp-uglify')
 const concat = require('gulp-concat')
 const through2 = require('through2')
 // `clear` 函数并未被导出, 因此被认为是私有任务
@@ -82,30 +88,58 @@ function publish (cb) {
     cb()
 }
 
-exports.build = series(
-    clean,
-    parallel(
-        cssTranspile,
-        series(jsTranspile, jsBundle)
-    ),
-    parallel(cssMinify, jsMinify),
-    publish,
-)
+// exports.build = series(
+//     clean,
+//     parallel(
+//         cssTranspile,
+//         series(jsTranspile, jsBundle)
+//     ),
+//     parallel(cssMinify, jsMinify),
+//     publish,
+// )
 
 function copy () {
-    return src(path.join(__dirname, '../src' + '/*.js'))
-        .pipe(dest(path.join(__dirname, '../dist/')))
+    return src(path.join(__dirname, '../public/*'), {
+        // base: '',
+    }).pipe(dest(path.join(__dirname, '../dist/')), {
+        
+    })
 }
 
 function concatStyle () {
     return src(path.join(__dirname, '../src/assets/styles') + '/*.scss')
         .pipe(concat('style.scss'))
-        .pipe(dest(path.join(__dirname, '../dist/')))
+        .pipe(dest(path.join(__dirname, '../dist/static/css')))
+}
+
+// 声明 gulp 任务
+const style = () => {
+    // 流, 就是异步操作
+    return src(path.join(__dirname, '../src/assets/styles') + '/*.less')
+        .pipe(less())
+        .pipe(autoprefixer())
+        .pipe(cleancss())
+        .pipe(rename({ extname: '.min.css' }))
+        .pipe(dest(path.join(__dirname, '../dist/static/css')))
+}
+
+// 声明脚本构建人物
+const script = () => {
+    // 流, 就是异步操作
+    return src(path.join(__dirname, '../src') + '/*.js{,x}')
+        .pipe(rename({ extname: '.min.js' }))
+        .pipe(dest(path.join(__dirname, '../dist/static/js')))
 }
 
 // exports.build = build
+// 串行
 // exports.build = series(transpile, bundle)
+// 并行
 // exports.build = parallel(javascript, css)
 // exports.default = series(clean, build)
-exports.default = copy
-exports.dev = series(copy, concatStyle)
+module.exports = {
+    default: copy,
+    style,
+    dev: parallel(copy, concatStyle),
+    build: parallel(copy, style, script),
+}
